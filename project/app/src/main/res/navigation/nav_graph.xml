@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/awalFragment">
+    app:startDestination="@+id/lininerFragment">
 
     <fragment
         android:id="@+id/awalFragment"
         android:name="ashwan.dhelian.project.awalFragment"
         android:label="fragment_awal"
-        tools:layout="@layout/fragment_awal" >
+        tools:layout="@layout/fragment_awal">
         <action
             android:id="@+id/action_awalFragment_to_inputFragment"
             app:destination="@id/inputFragment" />
@@ -21,7 +21,7 @@
         android:id="@+id/hobi3Fragment"
         android:name="ashwan.dhelian.project.hobi3Fragment"
         android:label="fragment_hobi3"
-        tools:layout="@layout/fragment_hobi3" >
+        tools:layout="@layout/fragment_hobi3">
         <action
             android:id="@+id/action_hobi3Fragment_to_awalFragment"
             app:destination="@id/awalFragment" />
@@ -30,7 +30,7 @@
         android:id="@+id/inputFragment"
         android:name="ashwan.dhelian.project.inputFragment"
         android:label="fragment_input"
-        tools:layout="@layout/fragment_input" >
+        tools:layout="@layout/fragment_input">
         <action
             android:id="@+id/action_inputFragment_to_outputFragment"
             app:destination="@id/outputFragment" />
@@ -40,4 +40,13 @@
         android:name="ashwan.dhelian.project.outputFragment"
         android:label="fragment_output"
         tools:layout="@layout/fragment_output" />
+    <fragment
+        android:id="@+id/lininerFragment"
+        android:name="ashwan.dhelian.project.lininerFragment"
+        android:label="fragment_lininer"
+        tools:layout="@layout/fragment_lininer" >
+        <action
+            android:id="@+id/action_lininerFragment_to_awalFragment"
+            app:destination="@id/awalFragment" />
+    </fragment>
 </navigation>
